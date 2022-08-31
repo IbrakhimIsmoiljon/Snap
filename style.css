@@ -39,7 +39,7 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     cursor: pointer;
-    background-color: Lightgrey;
+    background-color: rgb(239, 239, 239);
     color: #000;
 }
 
@@ -49,11 +49,22 @@ header .navbar ul li ul {
     width: 100px;
     background-color: #fff;
     display: none;
+    box-shadow: 0px 0px 5px 2px grey;
 }
 
 header .navbar ul li ul li {
     width: 100%;
     border-top: 1px solid #000;
+}
+
+header .navbar ul li ul:hover{
+    box-shadow: 0px 0px 5px 2px grey;
+    background-color: #fff;
+}
+
+header .navbar ul li:hover{
+    box-shadow: 0px 0px 5px 2px grey;
+    background-color: #fff;
 }
 
 header .navbar ul li ul li ul {
@@ -94,6 +105,13 @@ header label {
     height: 4vh;
 }
 
+.reg:hover {
+    color: #fff;
+    background-color: #000;
+    transition: 600ms;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
 
 .hero-text{text-align: left; text-transform: none;}
 .hero-header{
@@ -123,6 +141,7 @@ header label {
     background-color: #fff;
     color: black;
     cursor: pointer;
+    transition: 600ms;
 }
 
 .client-list ul {
@@ -153,8 +172,8 @@ header label {
 
 @media (max-width:600px) {
     header {padding: 20px;}
-    .learn {display: none;}
-    .reg {display: none;}
+    .learn {display: block; float: left;}
+    .reg {display: block; float: left;}
 
     header label {display: initial;}
 
@@ -202,3 +221,4 @@ header label {
     }
     .hero-image{height: 20rem; width: 70%;}
 }
+
